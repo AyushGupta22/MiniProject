@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+		<class name="Profile" table="Profile">
+			<id name="userId">
+				<generator class="assigned"></generator>
+			</id>
+			<property name="fname" column="FirstName" />
+			<property name="lname" column="LastName" />
+			<property name="dob" column="DOB" />
+			<property name="address" column="Address1" />
+			<property name="city" column="City" />
+			<property name="state" column="State" />
+			<property name="mobile" column="Mobile" />
+			<property name="gender" column="Gender" />
+		</class>
+</hibernate-mapping>

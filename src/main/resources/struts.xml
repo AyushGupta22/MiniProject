@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="a" extends="struts-default">
+		<action name="validate" method="validate" class="UserAction">
+			<result name="success">/dashboard.jsp</result>
+			<result name="error">/index1.jsp</result>
+		</action>
+		<action name="save" method="register" class="UserAction">
+				<result name="success">/success.jsp</result>
+				<result name="error">/error.jsp</result>
+			</action>
+		<action name="update" method="update" class="ProfileAction">
+				<result name="success">/success1.jsp</result>
+				<result name="error">/error1.jsp</result>
+		</action>
+		<action name="profile" method="profile" class="ProfileAction">
+			<result name="success">/profile1.jsp</result>
+			<result name="error">/profile.jsp</result>
+			<result name="input">/profile.jsp</result>
+		</action>
+		<action name="logout" class="UserAction" method="logout">  
+			<result name="success">/index.jsp</result>  
+		</action>
+	</package>
+</struts>
